@@ -8,9 +8,9 @@ export default function Home(){
         </div>
         <div className = "flex justify-center">
         <label className="swap swap-flip text-9xl">
-            <input type="checkbox" />
+            <input type="checkbox"/>
                 <div className="swap-off">
-                    <img className="shadow-xl" src="image/cv_cpy.png"></img>
+                    <img className="shadow-xl transition-transform transform hover:scale-105 duration-200 ease-in-out cursor-pointer" src="image/cv_pic.png"></img>
                 </div>
                 <div className="flex-col swap-on flex items-center justify-center bg-[#3c0052] shadow-2xl rounded-3xl">
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ export default function Home(){
                         fill = "orange">
                     <path d="M12 21l-8-9h6v-12h4v12h6l-8 9zm9-1v2h-18v-2h-2v4h22v-4h-2z"/>
                     </svg>
-                        <a className="btn btn-accent" href="/doc/cv_nathan_deleger.pdf" download target="_blank">Download</a>
+                        <a className="btn btn-accent transition-transform transform hover:scale-105 duration-200 ease-in-out cursor-pointer" href="/doc/cv_nathan_deleger.pdf" download target="_blank">Download</a>
                 </div>
             </label>
         </div>
