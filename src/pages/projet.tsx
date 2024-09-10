@@ -11,7 +11,12 @@ export default function Home(){
                             <h2 className="card-title">Project My_RPG</h2>
                             <p>This project involved creating a video game with RPG elements using the C programming language and the CSFML graphical libraries.<br></br> It included developing a game engine, implementing features such as combat, social interactions, animations, and creating graphical assets like the map.</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary" onClick={() => document.getElementById('my_modal_4').showModal()} open modal>See more</button>
+                                <button className="btn btn-primary" onClick={() => {
+                                    const modal = document.getElementById('my_modal_4');
+                                    if (modal) {
+                                        (modal as HTMLDialogElement).showModal();
+                                    }
+                                }}>See more</button>
                                 <dialog id="my_modal_4" className="modal">
                                     <div className="modal-box w-11/12 max-w-5xl">
                                         <h3 className="font-bold text-lg">Pirate Quest</h3>
@@ -35,7 +40,12 @@ export default function Home(){
                                 <h2 className="card-title">Project Minishell</h2>
                                 <p>The aim of this project was to recreate an entire shell inspired by TCSH, with command, binaries, and built-in, in C</p>
                                 <div className="card-actions justify-end">
-                                    <button className="btn btn-primary" onClick={()=>document.getElementById('my_modal_5').showModal()}open modal>See more</button>
+                                    <button className="btn btn-primary" onClick={() => {
+                                        const modal = document.getElementById('my_modal_5');
+                                        if (modal) {
+                                            (modal as HTMLDialogElement).showModal();
+                                        }
+                                    }}>See more</button>
                                     <dialog id="my_modal_5" className="modal">
                                         <div className="modal-box w-11/12 max-w-5xl">
                                             <h3 className="font-bold text-lg">Hello!</h3>
@@ -61,7 +71,12 @@ export default function Home(){
                             The main objective of the project was to understand<br></br>how sorting algorithms work.<br></br>
                             We implemented several sorting options.</p>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary" onClick={()=>document.getElementById('my_modal_6').showModal()}open modal>See more</button>
+                                <button className="btn btn-primary" onClick={() => {
+                                    const modal = document.getElementById('my_modal_6');
+                                    if (modal) {
+                                        (modal as HTMLDialogElement).showModal();
+                                    }
+                                }}>See more</button>
                                 <dialog id="my_modal_6" className="modal">
                                     <div className="modal-box w-11/12 max-w-5xl">
                                         <h3 className="font-bold text-lg">Hello!</h3>
@@ -85,7 +100,12 @@ export default function Home(){
                                 <h2 className="card-title">Project Corewar</h2>
                                 <p>On this project we had to recreate the well known "Corewar" that is a virtual fighting arena where some programs try to be last one standing.<br></br>Where we worked with C an assembly language to create translate and execute the instructions of each 'champions' in the arena</p>
                                 <div className="card-actions justify-end">
-                                    <button className="btn btn-primary" onClick={()=>document.getElementById('my_modal_7').showModal()}open modal>See more</button>
+                                    <button className="btn btn-primary" onClick={() => {
+                                        const modal = document.getElementById('my_modal_7');
+                                        if (modal) {
+                                            (modal as HTMLDialogElement).showModal();
+                                        }
+                                    }}>See more</button>
                                     <dialog id="my_modal_7" className="modal">
                                         <div className="modal-box w-11/12 max-w-5xl">
                                             <h3 className="font-bold text-lg">Hello!</h3>
